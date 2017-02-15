@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="nms-notify" version="1.0.0">
+	<name>notify</name>
+	<description>Prueba de notificaciones</description>
+	<content src="index.html"/>
+	<preference name="android-minSdkVersion" value="14"/>
+	<preference name="android-installLocation" value="auto"/>
+	<!-- General -->
+	<preference name="permissions" value="none"/>
+	<preference name="orientation" value="portrait"/>
+	<preference name="fullscreen" value="false"/>
+	<preference name="webviewbounce" value="true"/>
+	<preference name="stay-in-webview" value="false"/>
+	<preference name="show-splash-screen-spinner" value="true"/>
+	<preference name="auto-hide-splash-screen" value="true"/>
+	<preference name="disable-cursor" value="false"/>
+	<!-- plugins -->
+	<plugin name="cordova-plugin-fcm" source="npm"/>
+
+	<platform name="android">
+		<allow-intent href="market:*"/>
+	</platform>
+
+	<access origin="*"/>
+	<allow-intent href="http://*/*"/>
+	<allow-intent href="https://*/*"/>
+	<allow-intent href="tel:*"/>
+	<allow-intent href="sms:*"/>
+	<allow-intent href="mailto:*"/>
+	<allow-intent href="geo:*"/>
+</widget>
