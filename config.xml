@@ -16,8 +16,8 @@
 	<preference name="auto-hide-splash-screen" value="true"/>
 	<preference name="disable-cursor" value="false"/>
 	<!-- plugins -->
-	<plugin name="cordova-plugin-fcm-config" spec="cordova-plugin-fcm-config" />
 	<plugin name="cordova-plugin-fcm" source="npm"/>
+	<plugin name="cordova-plugin-fcm-config" spec="cordova-plugin-fcm-config" />
 
 	<platform name="android">
 		<allow-intent href="market:*"/>
