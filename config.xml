@@ -19,7 +19,7 @@
 	<plugin name="cordova-plugin-fcm" source="npm" />
 	<!-- <plugin name="cordova-plugin-fcm-config" spec="cordova-plugin-fcm-config" /> -->
 	<plugin name="cordova-plugin-fcm-config" source="npm" />
-	<plugin name="cordova-plugin-firebase" spec="0.1.19" />
+	<!-- <plugin name="cordova-plugin-firebase" spec="0.1.19" /> -->
 
 	<platform name="android">
 		<allow-intent href="market:*"/>
