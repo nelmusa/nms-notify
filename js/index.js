@@ -42,5 +42,5 @@ var app = {
             });
             token.style.display = "block";
         }
-
+    },
 };
