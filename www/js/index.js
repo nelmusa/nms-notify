@@ -22,7 +22,7 @@ var app = {
     initialize: function() {
         var vvv = document.getElementById('uno');
         vvv.childNodes[0].nodeValue = '1';
-        bindEvents();
+        this.bindEvents();
     },
     // Bind Event Listeners
     //
