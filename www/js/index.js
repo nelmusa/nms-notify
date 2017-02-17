@@ -1,6 +1,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
+        alert("1");
         var vvv = document.getElementById('uno');
         vvv.childNodes[0].nodeValue = '1';
         this.bindEvents();
@@ -10,15 +11,18 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+        alert("2");
         var vvv = document.getElementById('dos');
         vvv.childNodes[0].nodeValue = '2';
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        alert("2.1");
     },
     // deviceready Event Handler
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        alert("3");
         var vvv = document.getElementById('tres');
         vvv.childNodes[0].nodeValue = '3';
 
