@@ -20,6 +20,8 @@
 var app = {
     // Application Constructor
     initialize: function() {
+        var vvv = document.getElementById('uno');
+        vvv.childNodes[0].nodeValue = '1';
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -27,6 +29,8 @@ var app = {
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
+        var vvv = document.getElementById('dos');
+        vvv.childNodes[0].nodeValue = '2';
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -34,6 +38,9 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
+        var vvv = document.getElementById('tres');
+        vvv.childNodes[0].nodeValue = '3';
+
         app.receivedEvent('deviceready');
         window.FirebasePlugin.getToken(function(token) {
             // save this server-side and use it to push notifications to this device
