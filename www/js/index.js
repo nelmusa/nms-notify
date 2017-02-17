@@ -22,7 +22,7 @@ var app = {
     initialize: function() {
         var vvv = document.getElementById('uno');
         vvv.childNodes[0].nodeValue = '1';
-        this.bindEvents();
+        bindEvents();
     },
     // Bind Event Listeners
     //
@@ -31,7 +31,7 @@ var app = {
     bindEvents: function() {
         var vvv = document.getElementById('dos');
         vvv.childNodes[0].nodeValue = '2';
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('deviceready', onDeviceReady, false);
     },
     // deviceready Event Handler
     //
