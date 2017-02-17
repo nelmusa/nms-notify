@@ -38,8 +38,15 @@ var app = {
         window.FirebasePlugin.getToken(function(token) {
             // save this server-side and use it to push notifications to this device
             console.log('TOKEN FIREBASE : ' + token);
+
+            var vvv = document.getElementById('token');
+            vvv.childNodes[0].nodeValue = token;
+
         }, function(error) {
             console.error(error);
+            var vvv = document.getElementById('token');
+            vvv.childNodes[0].nodeValue = error;
+
         });
 
 
