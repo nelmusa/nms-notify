@@ -22,12 +22,13 @@ var app = {
                 console.log('TOKEN FIREBASE : ' + token);
                 localStorage.idnotify = token;
                 d.style.display = "block";
+                dd.style.display = "block";
 
-                var vvv = document.getElementById('token');
+                var vvv = document.getElementById('dd');
                 vvv.childNodes[0].nodeValue = token;
 
                 var request = new XMLHttpRequest();
-                request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
+                request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + token + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
                 true);
                 request.send();
                 f.style.display = "block";
@@ -35,12 +36,16 @@ var app = {
 
             }, function(error) {
                 console.error(error);
-                var vvv = document.getElementById('token');
+                var vvv = document.getElementById('ee');
                 vvv.childNodes[0].nodeValue = error;
                 e.style.display = "block";
+                ee.style.display = "block";
 
             });
-            token.style.display = "block";
+        } else {
+            var vvv = document.getElementById('dd');
+            vvv.childNodes[0].nodeValue = localStorage.idnotify;            
+            dd.style.display = "block";
         }
     },
 };
