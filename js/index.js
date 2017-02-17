@@ -1,16 +1,16 @@
 var app = {
     initialize: function() {
-        alert("a");
+        // alert("a");
         a.style.display = "block";
         this.bindEvents();
     },
     bindEvents: function() {
-        alert("b");
+        // alert("b");
         b.style.display = "block";
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     onDeviceReady: function() {
-        alert("c");
+        // alert("c");
         c.style.display = "block";
         app.receivedEvent('deviceready');
     },
@@ -24,14 +24,18 @@ var app = {
                 d.style.display = "block";
 
                 var vvv = document.getElementById('dd');
-                vvv.childNodes[0].nodeValue = token;
+                vvv.childNodes[0].nodeValue = 'token: ' + token;
                 dd.style.display = "block";
 
-                var request = new XMLHttpRequest();
-                request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + token + "&appcode=com.nmsnotify.android&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
-                true);
-                request.send();
-                f.style.display = "block";
+                
+
+                // var request = new XMLHttpRequest();
+                // request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + token + "&appcode=com.nmsnotify.android&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
+                //                      http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + e.regid + "&appcode=wai-notify-001&platform=android";
+                // true);
+                // request.send();
+                // f.style.display = "block";
+
 
 
             }, function(error) {
