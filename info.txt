@@ -4,4 +4,5 @@ open console
 https://console.firebase.google.com/
 
 
-
+para enviar mensajes
+https://cordova-plugin-fcm.appspot.com/
