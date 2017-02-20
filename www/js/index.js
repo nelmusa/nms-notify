@@ -17,7 +17,8 @@ var app = {
     receivedEvent: function(id) {
         var idnotify = localStorage.idnotify;
         if (idnotify == null || idnotify == "null" || idnotify == "" || idnotify == undefined){
-            window.FirebasePlugin.getToken(function(token) {
+            // window.FirebasePlugin.getToken(function(token) {
+            FirebasePlugin.getToken(function(token) {
                 // save this server-side and use it to push notifications to this device
                 console.log('TOKEN FIREBASE : ' + token);
                 localStorage.idnotify = token;
